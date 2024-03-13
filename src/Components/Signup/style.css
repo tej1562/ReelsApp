@@ -1,0 +1,15 @@
+.signupWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.signupCard{
+    margin-top: 5rem;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    margin-top: 1rem;
+}

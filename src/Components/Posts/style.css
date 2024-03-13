@@ -1,0 +1,162 @@
+.feed-container{
+    height: 90vh;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container{
+    width: 25%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.video-container::-webkit-scrollbar{
+    display: none;
+}
+
+.videos{
+    position: relative;
+}
+
+.details{
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.action{
+    display: flex;
+}
+
+.comment{
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.like{
+   cursor: pointer;
+   color: #e74c3c; 
+}
+
+.profile h4{
+    margin-left: 0.5rem;
+    font-size: 0.87rem;
+}
+
+.modal{
+    display: flex;
+    width: 60vw;
+    height: 70vh;
+}
+
+.modal-video-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.modal-video{
+    width: 70%;
+    object-fit: fill;
+}
+
+.modal-comments{
+    width: 50%;
+}
+
+.comments-list{
+    height: 80%;
+    padding: 1rem;
+    overflow: scroll;
+}
+
+.add-comment{
+    height: 20%;
+}
+
+.add-comment-cta{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.progress{
+    position: absolute;
+    bottom: 0.40rem;
+}
+
+/* Medium laptop */
+@media (max-width: 1024px){
+    .video-container{
+        width: 35%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    .video-container{
+        width: 50%;
+    }
+
+    .modal{
+        width: 80vw;
+    }
+}
+
+/* Large Mobile */
+@media (max-width: 425px){
+    .video-container{
+        width: 70%;
+    }
+
+    .modal{
+        flex-direction: column;
+        width: 80vw;
+        height: 85vh;
+    }
+
+    .modal-video-container{
+        width: 100%;
+        height: 40%;
+    }
+
+    .modal-comments{
+        width: 100%;
+        height: 60%;
+    }
+
+    .comments-list{
+       height: 73%;
+    }
+
+    .add-comment{
+       height: 27%;
+    }
+
+    .modal-video{
+        width: 60%;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 375px){
+    .video-container{
+        width: 80%;
+    }
+}

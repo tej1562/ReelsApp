@@ -1,0 +1,48 @@
+.loginWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+.img-car{
+   position: relative;
+   width: 450px;
+   height: 600px;
+   background-repeat: none;
+   background-size: cover;
+}
+
+.carousel{
+    position: absolute;
+    top: 94px;
+    left: 145px;
+    width: 246px;
+    .focusRing___1airF.carousel__slide-focus-ring {
+        outline: none !important;
+      }
+}
+
+.forgot-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .loginWrapper{
+        flex-direction: column;
+    }
+
+    .img-car{
+        display: none;
+     }
+}
